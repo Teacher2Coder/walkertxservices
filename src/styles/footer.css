@@ -1,0 +1,16 @@
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.contact-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 425px) {
+  .contact-icons {
+    align-items: center;
+  }
+}
