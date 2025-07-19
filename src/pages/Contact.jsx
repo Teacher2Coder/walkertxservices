@@ -39,15 +39,15 @@ const Contact = () => {
     >
       <Hero itemVariants={itemVariants} pageData={pageData} />
 
-        <div className="bg-neutral-600 mt-20">
+        <div className="bg-neutral-800 mt-20">
           <motion.div
             variants={itemVariants}
             className="container mx-auto container-padding py-12 md:py-16"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <motion.div variants={itemVariants}>
-                <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-                  <h2 className="text-2xl font-bold mb-6 text-white rye-regular">
+                <div className="bg-neutral-900 p-8 rounded-2xl shadow-lg">
+                  <h2 className="text-2xl font-bold mb-6 text-white sansation-regular">
                     Send us a message!
                   </h2>
                   

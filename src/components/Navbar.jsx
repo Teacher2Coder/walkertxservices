@@ -65,7 +65,7 @@ const Navbar = () => {
             className="flex space-x-3 group"
           >
               <img
-                src="/walkertxservices.svg"
+                src="/wts-white.svg"
                 alt="Walker Texas Services"
                 className="navbar-logo"
               />
@@ -77,16 +77,16 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative px-3 py-2 rounded-lg font-medium transition-all duration-300 rye-regular ${
+                className={`relative px-3 py-2 rounded-lg font-medium transition-all duration-300 sansation-regular ${
                   location.pathname === item.path
-                    ? "text-black bg-primary-900/30 backdrop-blur-sm"
-                    : "text-black hover:text-black hover:bg-primary-900/30"
+                    ? "text-white bg-primary-900/30 backdrop-blur-sm"
+                    : "text-white hover:text-white hover:bg-primary-900/30"
                 }`}
               >
                 {item.label}
                 {location.pathname === item.path && (
                   <motion.div
-                    className="absolute -bottom-1 left-3 right-3 h-0.5 bg-black rounded-full"
+                    className="absolute -bottom-1 left-3 right-3 h-0.5 bg-white rounded-full"
                     layoutId="activeTab"
                     initial={false}
                   />
@@ -97,7 +97,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg text-black hover:bg-primary-900/30 transition-colors duration-300"
+            className="md:hidden p-2 rounded-lg text-white hover:bg-primary-900/30 transition-colors duration-300"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -126,8 +126,8 @@ const Navbar = () => {
                       to={item.path}
                       className={`block py-3 px-4 rounded-lg font-medium transition-all duration-300 mobile-menu-item ${
                         location.pathname === item.path
-                          ? "bg-primary-900/30 text-black backdrop-blur-sm"
-                          : "text-black hover:text-black hover:bg-primary-900/30"
+                          ? "bg-primary-900/30 text-white backdrop-blur-sm"
+                          : "text-white hover:text-white hover:bg-primary-900/30"
                       }`}
                     >
                       {item.label}

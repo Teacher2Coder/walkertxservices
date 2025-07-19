@@ -61,7 +61,7 @@ const About = () => {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div variants={itemVariants}>
-              <h2 className="text-2xl font-bold mb-6 text-white rye-regular">
+              <h2 className="text-2xl font-bold mb-6 text-white sansation-regular">
                 Our Mission
               </h2>
               <p className="text-white">

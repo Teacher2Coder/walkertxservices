@@ -9,6 +9,10 @@
   margin-left: 10px;
 }
 
+.footer-logo {
+  max-height: 10rem;
+}
+
 @media (max-width: 425px) {
   .contact-icons {
     align-items: center;
