@@ -47,7 +47,7 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <motion.div variants={itemVariants}>
                 <div className="bg-neutral-900 p-8 rounded-2xl shadow-lg">
-                  <h2 className="text-2xl font-bold mb-6 text-white sansation-regular">
+                  <h2 className="text-2xl font-bold mb-6 text-white tinos-regular">
                     Send us a message!
                   </h2>
                   

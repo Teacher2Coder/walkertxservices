@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center">
-            <h4 className="text-lg font-semibold text-accent-500 mb-4 sansation-regular">
+            <h4 className="text-lg font-semibold text-accent-500 mb-4 tinos-regular">
               Quick Links
             </h4>
             <div className="space-y-2">
@@ -38,7 +38,7 @@ const Footer = () => {
                 <Link
                   key={index}
                   to={link.path}
-                  className="block text-white hover:text-white transition-colors duration-300 sansation-regular"
+                  className="block text-white hover:text-white transition-colors duration-300 tinos-regular"
                   onClick={() => handleSmoothScroll()}
                 >
                   {link.label}
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center md:text-right connect-section">
-            <h4 className="text-lg font-semibold text-accent-500 mb-4 sansation-regular">
+            <h4 className="text-lg font-semibold text-accent-500 mb-4 tinos-regular">
               Connect With us!
             </h4>
             <div className="contact-icons">
@@ -91,8 +91,8 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-white">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-accent-500 text-sm mb-4 md:mb-0 sansation-regular">
-              © {new Date().getFullYear()} Walker Texas Services. All rights reserved.
+            <p className="text-accent-500 text-sm mb-4 md:mb-0 tinos-regular">
+              © {new Date().getFullYear()} Walker Texas Services, LLC. All rights reserved.
             </p>
           </div>
         </div>

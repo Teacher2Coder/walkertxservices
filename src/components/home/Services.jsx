@@ -33,7 +33,7 @@ const Services = ({ itemVariants }) => {
     <section className="p-6 bg-accent-500">
       <div className="max-w-7xl mx-auto container-padding">
         <motion.div variants={itemVariants} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-600 sansation-regular">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-600 tinos-regular">
             Services at a Glance
           </h2>
         </motion.div>
@@ -50,7 +50,7 @@ const Services = ({ itemVariants }) => {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 cursor-pointer sansation-regular">
+                <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 cursor-pointer tinos-regular">
                   {service.title}
                 </h3>
 

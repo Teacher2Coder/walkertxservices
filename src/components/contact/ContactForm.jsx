@@ -158,13 +158,13 @@ const ContactForm = () => {
         className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
       >
         {isSubmitting ? (
-          <p className="flex items-center gap-2 sansation-regular">
-            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin sansation-regular"></div>
+          <p className="flex items-center gap-2 tinos-regular">
+            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin tinos-regular"></div>
             Sending...
           </p>
         ) : (
-          <p className="flex items-center gap-2 sansation-regular">
-            <Send className="w-5 h-5 sansation-regular" />
+          <p className="flex items-center gap-2 tinos-regular">
+            <Send className="w-5 h-5 tinos-regular" />
             Send Message
           </p>
         )}
@@ -174,7 +174,7 @@ const ContactForm = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-4 bg-green-100 dark:bg-green-900/30 border border-green-300 dark:border-green-700 rounded-lg text-green-700 dark:text-green-300 sansation-regular"
+          className="p-4 bg-accent-500/30 border border-accent-500 rounded-lg text-white tinos-regular"
         >
           Thanks for your message! We'll get back to you soon.
         </motion.div>
@@ -184,7 +184,7 @@ const ContactForm = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-4 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 rounded-lg text-red-700 dark:text-red-300 sansation-regular"
+          className="p-4 bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 rounded-lg text-red-700 dark:text-red-300 tinos-regular"
         >
           Something went wrong. Please try again later.
         </motion.div>
