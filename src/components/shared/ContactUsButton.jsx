@@ -11,11 +11,11 @@ const ContactUsButton = ({ itemVariants }) => {
     >
       <Link
         to="/contact"
-        className="btn-primary inline-flex items-center gap-2"
+        className="btn-primary inline-flex items-center gap-2 text-accent-500"
         onClick={() => handleSmoothScroll()}
       >
         Contact Us
-        <ArrowRight className="w-5 h-5" />
+        <ArrowRight className="w-5 h-5 text-accent-500" />
       </Link>
     </motion.div>
   );

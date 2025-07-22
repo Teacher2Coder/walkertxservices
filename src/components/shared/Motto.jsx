@@ -3,96 +3,42 @@ import ContactUsButton from "./ContactUsButton";
 
 const Motto = ({ itemVariants }) => {
   const mottoData = {
-    title: "Our motto:",
-    image: "/skidsteer-shovel.jpg",
-    imageAlt: "Skidsteer",
-    description: "Providing you with:",
     parts: [
       "Dependable Work",
       "Honest prices",
       "Family Values",
-      "...Located in the heart of Texas"
+      "...Located in the heart of Texas",
     ],
-    callToAction: "Are you ready to see how we can turn your project into a reality?",
-  }
-  
+    callToAction:
+      "Are you ready to see how we can turn your project into a reality?",
+  };
+
   return (
     <motion.div
       variants={itemVariants}
-      className="container-padding section-padding bg-neutral-900"
+      className="container-padding p-6 bg-neutral-900"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          {/* Image Section - Left Side */}
-          <motion.div
-            variants={itemVariants}
-            className="order-2 lg:order-1"
-          >
-            <img
-              src={mottoData.image}
-              alt={mottoData.imageAlt}
-              className="w-full h-auto rounded-lg shadow-lg object-cover"
+        <motion.div
+          variants={itemVariants}
+          className="order-1 lg:order-2 space-y-6 text-center"
+        >
+          <div className="flex justify-center items-center">
+            <img 
+              src="/slogan.svg" 
+              alt="Slogan" 
+              className="slogan-image"
             />
-          </motion.div>
-
-          <motion.div
-            variants={itemVariants}
-            className="order-1 lg:order-2 space-y-6"
-          >
-            <motion.h2
+          </div>
+          <motion.p
               variants={itemVariants}
-              className="text-2xl text-center sm:text-3xl lg:text-4xl font-bold text-primary-600 mb-4"
+              className="text-base sm:text-lg leading-relaxed text-white font-medium mt-60 sansation-regular"
             >
-              {mottoData.title}
-            </motion.h2>
-            
-            <motion.p 
-              variants={itemVariants}
-              className="text-base sm:text-lg leading-relaxed text-white mb-6"
-            >
-              {mottoData.description}
+              {mottoData.callToAction}
             </motion.p>
-            
-            <motion.ul 
-              variants={itemVariants} 
-              className="space-y-3"
-              style={{
-                alignItems: "center",
-                listStyleType: "none",
-              }}
-            >
-              {mottoData.parts.map((part, index) => (
-                <motion.li 
-                  key={index} 
-                  variants={itemVariants}
-                  className="flex items-start space-x-3"
-                  style={{ marginLeft: `${index * 2.5}rem` }}
-                >
-                  <span className="text-white leading-relaxed">{part}</span>
-                </motion.li>
-              ))}
-            </motion.ul>
-            
-            {mottoData.callToAction && (
-              <motion.p 
-                variants={itemVariants}
-                className="text-base sm:text-lg leading-relaxed text-white font-medium mt-6"
-              >
-                {mottoData.callToAction}
-              </motion.p>
-            )}
-            
-            {mottoData.callToAction2 && (
-              <motion.p 
-                variants={itemVariants}
-                className="text-base sm:text-lg leading-relaxed text-primary-600 font-semibold"
-              >
-                {mottoData.callToAction2}
-              </motion.p>
-            )}
-            <ContactUsButton itemVariants={itemVariants}/>
-          </motion.div>
-        </div>
+
+          <ContactUsButton itemVariants={itemVariants} />
+        </motion.div>
       </div>
     </motion.div>
   );

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { GiTexas } from "react-icons/gi";
 import handleSmoothScroll from "../utils/handleSmoothScroll";
 
 import "../styles/navbar.css";
@@ -64,11 +65,10 @@ const Navbar = () => {
             to="/"
             className="flex space-x-3 group"
           >
-              <img
-                src="/wts-white.svg"
-                alt="Walker Texas Services"
-                className="navbar-logo"
-              />
+              <GiTexas className="text-2xl md:text-3xl text-accent-500" />
+              <h1 
+                className="text-2xl md:text-lg text-accent-500 font-bold sansation-regular"
+              >Walker Texas Services</h1>
           </Link>
 
           {/* Desktop Menu */}
@@ -86,7 +86,7 @@ const Navbar = () => {
                 {item.label}
                 {location.pathname === item.path && (
                   <motion.div
-                    className="absolute -bottom-1 left-3 right-3 h-0.5 bg-white rounded-full"
+                    className="absolute -bottom-1 left-3 right-3 h-0.5 bg-accent-500 rounded-full"
                     layoutId="activeTab"
                     initial={false}
                   />

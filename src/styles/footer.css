@@ -9,16 +9,24 @@
   margin-left: 10px;
 }
 
+.connect-section {
+  margin-right: 5rem;
+}
+
 .footer-logo {
   max-height: 10rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .connect-section {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 425px) {
   .contact-icons {
     align-items: center;
-  }
-
-  .footer-logo {
-    margin: 0 auto;
   }
 }

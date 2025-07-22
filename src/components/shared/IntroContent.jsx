@@ -14,23 +14,19 @@ const IntroContent = ({ itemVariants, pageData }) => {
             textShadow: "1px 1px 2px rgba(0, 0, 0, 0.1)",
           }}
         >
-          {pageData.subTitle}
+          {pageData.introTitle}
         </motion.h2>
 
         <div className="space-y-4">
-          <motion.p
-            variants={itemVariants}
-            className="text-base sm:text-lg leading-relaxed text-gray-700 text-center"
-          >
-            {pageData.subDescription}
-          </motion.p>
-
-          <motion.p
-            variants={itemVariants}
-            className="text-base sm:text-lg leading-relaxed text-gray-700 text-center"
-          >
-            {pageData.subDescription2}
-          </motion.p>
+          {pageData.introParagraphs.map((paragraph, index) => (
+            <motion.p
+              key={index}
+              variants={itemVariants}
+              className="text-base sm:text-lg leading-relaxed text-gray-700 text-center"
+            >
+              {paragraph}
+            </motion.p>
+          ))}
         </div>
       </div>
     </motion.div>

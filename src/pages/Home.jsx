@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Hero from '../components/home/Hero';
 import Services from '../components/home/Services';
+import Motto from '../components/shared/Motto';
 
 import '../styles/home.css';
 
@@ -42,8 +43,13 @@ const containerVariants = {
         </motion.div>
 
         <motion.div variants={itemVariants}>
+          <Motto itemVariants={itemVariants} />
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
           <Services itemVariants={itemVariants} />
         </motion.div>
+
       </motion.div>
     </div>
   );

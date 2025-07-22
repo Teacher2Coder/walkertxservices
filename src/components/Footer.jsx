@@ -22,11 +22,15 @@ const Footer = () => {
               src="/wts-white.svg"
               alt="Walker Texas Services"
               className="footer-logo"
+              style={{
+                margin: "0 auto",
+                marginTop: "2rem",
+              }}
             />
           </div>
 
           <div className="text-center">
-            <h4 className="text-lg font-semibold text-white mb-4 sansation-regular">
+            <h4 className="text-lg font-semibold text-accent-500 mb-4 sansation-regular">
               Quick Links
             </h4>
             <div className="space-y-2">
@@ -43,8 +47,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-center md:text-right">
-            <h4 className="text-lg font-semibold text-white mb-4 sansation-regular">
+          <div className="text-center md:text-right connect-section">
+            <h4 className="text-lg font-semibold text-accent-500 mb-4 sansation-regular">
               Connect With us!
             </h4>
             <div className="contact-icons">
@@ -87,7 +91,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-white">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white text-sm mb-4 md:mb-0 sansation-regular">
+            <p className="text-accent-500 text-sm mb-4 md:mb-0 sansation-regular">
               © {new Date().getFullYear()} Walker Texas Services. All rights reserved.
             </p>
           </div>

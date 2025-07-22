@@ -27,10 +27,12 @@ const Services = () => {
   const pageData = {
     title: "Our Services",
     description: "No matter the job, we will get it done.",
-    subTitle: "Service over everything",
-    subTitle2: "From an early age, my roots were developed on the family's cotton farm and cattle operation.  Now, in 2025, we are in our 19th year of developing our roots in central Texas.",
-    subDescription: "Throughout my early career \"service\" was the constant variable when working as a teacher/coach, and an oil & gas landman. Our new venture, Walker Texas Services, presents further opportunities to serve.",
-    subDescription2: "From land clearing, hauling away old fencing, building a raised garden, our service options are numerous.  How can we serve you?",
+    introTitle: "Service over everything",
+    introParagraphs: [
+      "From an early age, my roots were developed on the family's cotton farm and cattle operation.  Now, in 2025, we are in our 19th year of developing our roots in central Texas.",
+      "Throughout my early career \"service\" was the constant variable when working as a teacher/coach, and an oil & gas landman. Our new venture, Walker Texas Services, presents further opportunities to serve.",
+      "From land clearing, hauling away old fencing, building a raised garden, our service options are numerous.  How can we serve you?",
+    ],
     image: "/skidsteer-shovel.jpg",
     imageAlt: "Skidsteer",
     cardTitle: "Our Services",
