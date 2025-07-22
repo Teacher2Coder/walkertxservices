@@ -17,4 +17,8 @@
   .contact-icons {
     align-items: center;
   }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
 }

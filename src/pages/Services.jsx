@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import Hero from "../components/shared/Hero";
+import IntroContent from "../components/shared/IntroContent";
+import CardList from "../components/shared/CardList";
 
 const Services = () => {
   const containerVariants = {
@@ -24,22 +26,23 @@ const Services = () => {
 
   const pageData = {
     title: "Our Services",
-    description: "Transform your house into the home of your dreams with our comprehensive residential construction services.",
-    subTitle: "Choose us for whole-home, kitchen or bathroom remodeling services.",
-    subTitle2: "We turn unappealing houses in the DFW area and beyond into dream homes.",
-    subDescription: "Is your kitchen, bathroom or another area of your house outdated? Maybe it has an awkward layout or just isn’t your style. At TRYCON ENTERPRISES, our goal is to turn your house into a home that fits your lifestyle. We offer a wide range of residential services — from home additions to bathroom remodeling — in the Dallas-Fort Worth area.",
-    subDescription2: "We’re here to provide you with an easy experience. Count on us to stay within your budget and finish remodeling your kitchen, bathroom or other space in a timely manner with as little disruption to your life as possible.",
-    offeringTitle: "If you want it, we can deliver it.",
-    offeringImage: "/services/sink.webp",
-    imageAlt: "Sink",
-    offeringDescription: "Let us help you refresh or improve your favorite spaces. We offer:",
-    offerings: [
-      "Home Additions",
-      "Kitchen Remodeling",
-      "Bathroom Remodeling",
-      "Deck and dock construction",
-      "Outdoor kitchen and living space remodeling",
-      "Office, living room, and bedroom remodeling",
+    description: "No matter the job, we will get it done.",
+    subTitle: "Service over everything",
+    subTitle2: "From an early age, my roots were developed on the family's cotton farm and cattle operation.  Now, in 2025, we are in our 19th year of developing our roots in central Texas.",
+    subDescription: "Throughout my early career \"service\" was the constant variable when working as a teacher/coach, and an oil & gas landman. Our new venture, Walker Texas Services, presents further opportunities to serve.",
+    subDescription2: "From land clearing, hauling away old fencing, building a raised garden, our service options are numerous.  How can we serve you?",
+    image: "/skidsteer-shovel.jpg",
+    imageAlt: "Skidsteer",
+    cardTitle: "Our Services",
+    items: [
+      "Land Clearing",
+      "Fencing Removal",
+      "Garden Raised Beds",
+      "Fencing Installation",
+      "Fencing Repair",
+      "Fencing Maintenance",
+      "Fencing Replacement",
+      "And much much more!"
     ],
     callToAction: "Are you ready to see how we can turn your project into a reality?",
     callToAction2: "Schedule a free consultation with us today!",
@@ -53,6 +56,22 @@ const Services = () => {
       className="min-h-screen flex flex-col"
     >
       <Hero itemVariants={itemVariants} pageData={pageData} />
+
+      <div
+        style={{
+          backgroundImage: "url('/geopattern.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          width: "100%",
+        }}
+      >
+        <div className="bg-white/90">
+          <IntroContent itemVariants={itemVariants} pageData={pageData} />
+        </div>
+      </div>
+
+      <CardList itemVariants={itemVariants} pageData={pageData} />
     </motion.div>
   );
 };
