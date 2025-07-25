@@ -67,7 +67,7 @@ const Navbar = () => {
           >
               <GiTexas className="text-2xl md:text-3xl text-primary-600" />
               <h1 
-                className="text-3xl sm:text-lg text-primary-600 font-bold font-copperplate-cc"
+                className="navbar-name text-primary-600 font-bold font-copperplate-cc"
               >Walker Texas Services</h1>
           </Link>
 
