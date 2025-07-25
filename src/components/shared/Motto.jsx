@@ -32,7 +32,7 @@ const Motto = ({ itemVariants }) => {
           </div>
           <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg leading-relaxed text-white font-medium mt-60 tinos-regular"
+              className="text-base sm:text-lg leading-relaxed text-white font-medium mt-60 font-copperplate-gothic"
             >
               {mottoData.callToAction}
             </motion.p>

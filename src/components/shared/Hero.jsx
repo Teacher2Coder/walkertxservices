@@ -9,7 +9,7 @@ const Hero = ({ itemVariants, pageData }) => {
       <div className="container mx-auto container-padding text-center">
         <motion.h1
           variants={itemVariants}
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-accent-500 mb-4 tinos-regular"
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-accent-500 mb-4 font-copperplate-gothic"
         >
           {pageData.title}
         </motion.h1>

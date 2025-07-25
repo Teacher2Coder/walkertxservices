@@ -51,8 +51,8 @@ const Navbar = () => {
     <motion.nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? "bg-primary-600 backdrop-blur-lg border-b border-primary-500/30 shadow-md md:shadow-xl" 
-          : "bg-primary-600/95 backdrop-blur-md border-b border-primary-500/20 shadow-sm md:shadow-lg"
+          ? "bg-accent-500 backdrop-blur-lg border-b border-primary-500/30 shadow-md md:shadow-xl" 
+          : "bg-accent-500/95 backdrop-blur-md border-b border-primary-500/20 shadow-sm md:shadow-lg"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -65,9 +65,9 @@ const Navbar = () => {
             to="/"
             className="flex space-x-3 group"
           >
-              <GiTexas className="text-2xl md:text-3xl text-accent-500" />
+              <GiTexas className="text-2xl md:text-3xl text-primary-600" />
               <h1 
-                className="text-2xl md:text-lg text-accent-500 font-bold tinos-regular"
+                className="text-3xl sm:text-lg text-primary-600 font-bold font-copperplate-cc"
               >Walker Texas Services</h1>
           </Link>
 
@@ -77,16 +77,16 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative px-3 py-2 rounded-lg font-medium transition-all duration-300 tinos-regular ${
+                className={`relative px-3 py-2 rounded-lg font-medium transition-all duration-300 font-copperplate-gothic ${
                   location.pathname === item.path
-                    ? "text-white bg-primary-900/30 backdrop-blur-sm"
-                    : "text-white hover:text-white hover:bg-primary-900/30"
+                    ? "text-white bg-accent-900/30 backdrop-blur-sm"
+                    : "text-white hover:text-white hover:bg-accent-900/30"
                 }`}
               >
                 {item.label}
                 {location.pathname === item.path && (
                   <motion.div
-                    className="absolute -bottom-1 left-3 right-3 h-0.5 bg-accent-500 rounded-full"
+                    className="absolute -bottom-1 left-3 right-3 h-0.5 bg-primary-600 rounded-full"
                     layoutId="activeTab"
                     initial={false}
                   />

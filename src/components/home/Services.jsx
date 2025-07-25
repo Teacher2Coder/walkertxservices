@@ -8,32 +8,35 @@ const Services = ({ itemVariants }) => {
   const services = [
     {
       key: 1,
-      title: "Residential",
+      title: "Dump Trailer Services",
       description:
-        "30+ years experience in home renovations. We specialize in remodeling/refreshing your home.",
-      link: "/residential",
+        "We offer a wide range of dump trailer services, including hauling, dumping, and more.",
+      link: "/services",
+      image: "/trailer.png",
     },
     {
       key: 2,
-      title: "Commercial",
+      title: "Hauling Services",
       description:
-        "We handle all aspects of your commercial building, from new construction to remodels and more.",
-      link: "/commercial",
+        "We offer a wide range of hauling services, including hauling, dumping, and more.",
+      link: "/services",
+      image: "/skid-in-truck.png",
     },
     {
       key: 3,
-      title: "Superintendent Services",
+      title: "Land Clearing",
       description:
-        "Our experienced and knowledgeable superintendents are ready to fill in temporarily or long term for any project nationwide.",
-      link: "/superintendent-services",
+        "We offer a wide range of land clearing services, including clearing, grading, and more.",
+      link: "/services",
+      image: "/skidsteer-close.png",
     },
   ];
 
   return (
-    <section className="p-6 bg-accent-500">
+    <section className="p-6 bg-white">
       <div className="max-w-7xl mx-auto container-padding">
         <motion.div variants={itemVariants} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-600 tinos-regular">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent-500 font-copperplate-cc">
             Services at a Glance
           </h2>
         </motion.div>
@@ -43,18 +46,18 @@ const Services = ({ itemVariants }) => {
             <motion.div
               key={service.key}
               whileHover={{ y: -10 }}
-              className="bg-gray-50 dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg card-hover"
+              className="bg-gray-50 dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg card-hover outline-black outline-6"
             >
-              <div className="h-48 bg-gradient-to-br from-primary-400 to-accent-400 relative">
-                <div className="absolute inset-0 bg-black/20"></div>
+              <div className="h-48 relative">
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 cursor-pointer tinos-regular">
+                <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 cursor-pointer font-copperplate-cc">
                   {service.title}
                 </h3>
 
-                <p className="text-white mb-4">
+                <p className="text-white mb-4 font-copperplate-gothic">
                   {service.description}
                 </p>
               </div>
@@ -65,7 +68,7 @@ const Services = ({ itemVariants }) => {
       <motion.div variants={itemVariants} className="flex justify-center mt-8">
         <Link
           to="/services"
-          className="btn-primary bg-primary-600 hover:bg-primary-700 inline-flex items-center justify-center gap-2 text-accent-500"
+          className="btn-primary bg-primary-400 hover:bg-primary-700 inline-flex items-center justify-center gap-2 text-accent-500 font-copperplate-gothic"
           onClick={() => handleSmoothScroll()}
         >
           Learn more

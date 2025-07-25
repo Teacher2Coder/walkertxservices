@@ -26,3 +26,5 @@ dist-ssr
 *.njsprod
 *.sln
 *.sw?
+
+.DS_Store
