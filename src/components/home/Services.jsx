@@ -10,7 +10,7 @@ const Services = ({ itemVariants }) => {
       key: 1,
       title: "Dump Trailer Services",
       description:
-        "We offer a wide range of dump trailer services, including hauling, dumping, and more.",
+        "Our 16 foot dump trailer can assist you with hauling away debris, tree branches, old fencing, and more.",
       link: "/services",
       image: "/trailer.png",
     },
@@ -18,7 +18,7 @@ const Services = ({ itemVariants }) => {
       key: 2,
       title: "Hauling Services",
       description:
-        "We offer a wide range of hauling services, including hauling, dumping, and more.",
+        "Do you have equipment, machinery or landscaping items that need to be hauled? We can help you with a variety of tasks.",
       link: "/services",
       image: "/skid-in-truck.png",
     },
@@ -26,7 +26,7 @@ const Services = ({ itemVariants }) => {
       key: 3,
       title: "Land Clearing",
       description:
-        "We offer a wide range of land clearing services, including clearing, grading, and more.",
+        "Need land cleared, need open spaces, or have unwanted brush in your way? Our track loader can assist you.",
       link: "/services",
       image: "/skidsteer-close.png",
     },
@@ -53,9 +53,11 @@ const Services = ({ itemVariants }) => {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 cursor-pointer font-copperplate-cc">
-                  {service.title}
-                </h3>
+                <Link to={service.link}>
+                  <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 cursor-pointer font-copperplate-cc">
+                    {service.title}
+                  </h3>
+                </Link>
 
                 <p className="text-white mb-4 font-copperplate-gothic">
                   {service.description}

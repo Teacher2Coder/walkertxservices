@@ -67,7 +67,7 @@ const Footer = () => {
                 <span className="text-sm mb-1 text-white font-copperplate-gothic">Email us!</span>
                 <Link
                   className="p-1 bg-primary-600 rounded-lg transition-transform duration-300 hover:scale-105 flex items-center justify-center contact-icon"
-                  to="mailto:ethan.owens4@gmail.com"
+                  to="mailto:walkertxservices@gmail.com"
                   onClick={() => handleSmoothScroll()}
                   aria-label="Email us"
                 >

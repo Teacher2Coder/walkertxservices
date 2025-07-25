@@ -16,7 +16,7 @@ const Motto = ({ itemVariants }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="container-padding p-6 bg-neutral-900"
+      className="container-padding pb-8 bg-neutral-900"
     >
       <div className="max-w-6xl mx-auto">
         <motion.div

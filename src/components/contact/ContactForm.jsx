@@ -62,7 +62,7 @@ const ContactForm = () => {
         <div>
           <label
             htmlFor="firstName"
-            className="block text-sm font-medium text-white mb-2"
+            className="block text-sm font-medium text-white mb-2 font-copperplate-gothic"
           >
             First Name
           </label>
@@ -80,7 +80,7 @@ const ContactForm = () => {
         <div>
           <label
             htmlFor="lastName"
-            className="block text-sm font-medium text-white mb-2"
+            className="block text-sm font-medium text-white mb-2 font-copperplate-gothic"
           >
             Last Name
           </label>
@@ -100,7 +100,7 @@ const ContactForm = () => {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-white mb-2"
+            className="block text-sm font-medium text-white mb-2 font-copperplate-gothic"
           >
             Email
           </label>
@@ -118,7 +118,7 @@ const ContactForm = () => {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-white mb-2"
+            className="block text-sm font-medium text-white mb-2 font-copperplate-gothic"
           >
             Phone
           </label>
@@ -137,7 +137,7 @@ const ContactForm = () => {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-white mb-2"
+          className="block text-sm font-medium text-white mb-2 font-copperplate-gothic"
         >
           Message
         </label>
