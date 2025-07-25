@@ -1,4 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Copperplate CC Font Faces */
+@font-face {
+  font-family: 'Copperplate CC';
+  src: url('/CopperplateCC/ttf/CopperplateCC-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Copperplate CC';
+  src: url('/CopperplateCC/ttf/CopperplateCC-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Copperplate Gothic Std 29 BC Font Face */
+@font-face {
+  font-family: 'Copperplate Gothic Std 29 BC';
+  src: url('/Copperplate Gothic Std 29 BC/Copperplate Gothic Std 29 BC.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -47,26 +74,40 @@
   }
 }
 
-.tinos-regular {
-  font-family: "Tinos", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.tinos-bold {
-  font-family: "Tinos", serif;
+/* Copperplate CC Utility Classes */
+.font-copperplate-gothic-cc {
+  font-family: "Copperplate CC", serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.tinos-regular-italic {
-  font-family: "Tinos", serif;
-  font-weight: 400;
-  font-style: italic;
+.font-copperplate-gothic-cc-heavy {
+  font-family: "Copperplate CC", serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
-.tinos-bold-italic {
-  font-family: "Tinos", serif;
+.copperplate-cc-bold {
+  font-family: "Copperplate CC", serif;
   font-weight: 700;
-  font-style: italic;
+  font-style: normal;
+}
+
+.copperplate-cc-heavy {
+  font-family: "Copperplate CC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Copperplate Gothic Std 29 BC Utility Classes */
+.font-copperplate-gothic-gothic {
+  font-family: "Copperplate Gothic Std 29 BC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.copperplate-gothic {
+  font-family: "Copperplate Gothic Std 29 BC", serif;
+  font-weight: 700;
+  font-style: normal;
 }

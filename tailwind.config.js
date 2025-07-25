@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'copperplate-cc': ['"Copperplate CC"', 'serif'],
+        'copperplate-gothic': ['"Copperplate Gothic Std 29 BC"', 'serif'],
       },
       colors: {
         primary: {

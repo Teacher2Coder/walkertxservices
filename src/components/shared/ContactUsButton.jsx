@@ -11,7 +11,7 @@ const ContactUsButton = ({ itemVariants }) => {
     >
       <Link
         to="/contact"
-        className="btn-primary inline-flex items-center gap-2 text-accent-500"
+        className="btn-primary inline-flex items-center gap-2 text-accent-500 font-copperplate-gothic"
         onClick={() => handleSmoothScroll()}
       >
         Contact Us
