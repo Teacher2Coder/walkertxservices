@@ -26,23 +26,22 @@ const Services = () => {
 
   const pageData = {
     title: "Our Services",
-    description: "No matter the job, we will get it done.",
+    description: "Dependable Work, Honest Prices, Family Values\nDeep in the Heart of Texas",
     introTitle: "Service over everything",
     image: "/skidsteer-shovel.jpg",
     imageAlt: "Skidsteer",
     cardTitle: "Our Services",
     items: [
       "Land Clearing",
-      "Fencing Removal",
-      "Garden Raised Beds",
-      "Fencing Installation",
       "Fencing Repair",
-      "Fencing Maintenance",
-      "Fencing Replacement",
-      "And much much more!"
+      "Fencing Removal",
+      "Fencing Installation",
+      "Raised Garden Beds",
+      "Dump Trailer Services",
+      "And much, much more!"
     ],
     callToAction: "Are you ready to see how we can turn your project into a reality?",
-    callToAction2: "Schedule a free consultation with us today!",
+    callToAction2: "Schedule a free estimate with us today!",
   };
 
   return (

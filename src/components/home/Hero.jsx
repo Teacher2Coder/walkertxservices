@@ -14,7 +14,7 @@ const Hero = () => {
         className="absolute top-4 right-4 z-20 sm:top-6 sm:right-6 lg:top-8 lg:right-8"
       >
         <img 
-          src="/wts-dark.svg" 
+          src="/wts-white.svg" 
           alt="Walker TX Services Logo" 
           className="w-16 h-auto sm:w-20 md:w-24 lg:w-28 opacity-90 hover:opacity-100 transition-opacity duration-300"
         />

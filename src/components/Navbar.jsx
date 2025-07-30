@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full px-4 sm:px-6 nav-custom lg:px-8 z-50 transition-all duration-300 ${
         scrolled 
           ? "bg-accent-500 backdrop-blur-lg border-b border-primary-500/30 shadow-md md:shadow-xl" 
           : "bg-accent-500/95 backdrop-blur-md border-b border-primary-500/20 shadow-sm md:shadow-lg"
@@ -57,7 +57,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
           <Link
@@ -66,7 +66,7 @@ const Navbar = () => {
           >
               <GiTexas className="text-2xl md:text-3xl text-primary-600" />
               <h1 
-                className="navbar-name text-primary-600 font-bold font-copperplate-cc"
+                className="navbar-name text-primary-600 font-bold sm:text-sm font-copperplate-cc"
               >Walker Texas Services</h1>
           </Link>
 

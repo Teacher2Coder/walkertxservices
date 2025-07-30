@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import ContactUsButton from "./ContactUsButton";
+import "../../styles/services.css";
 
 const CardList = ({ itemVariants, pageData }) => {
   
   return (
     <motion.div
       variants={itemVariants}
-      className="container-padding section-padding bg-white"
+      className="container-padding section-padding bg-white card-list"
     >
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
