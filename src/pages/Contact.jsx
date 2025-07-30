@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import Hero from '../components/shared/Hero'
 import ContactForm from '../components/contact/ContactForm'
 import SidePanel from '../components/contact/SidePanel'
+import "../../src/styles/contact.css";
 
 const Contact = () => {
   const containerVariants = {
@@ -42,7 +43,7 @@ const Contact = () => {
         <div className="bg-neutral-800">
           <motion.div
             variants={itemVariants}
-            className="container mx-auto container-padding py-12 md:py-16"
+            className="container mx-auto container-padding py-12 md:py-16 contact-panel"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <motion.div variants={itemVariants}>

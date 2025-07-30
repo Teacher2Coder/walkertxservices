@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ContactUsButton from "./ContactUsButton";
+import { useLocation } from "react-router-dom";
 
 const Motto = ({ itemVariants }) => {
   const mottoData = {
@@ -12,6 +13,8 @@ const Motto = ({ itemVariants }) => {
     callToAction:
       "Are you ready to see how we can turn your project into a reality?",
   };
+
+  const location = useLocation();
 
   // TODO: Make the image bigger
 
@@ -29,7 +32,7 @@ const Motto = ({ itemVariants }) => {
             <img 
               src="/slogan.svg" 
               alt="Slogan" 
-              className="slogan-image"
+              className={`slogan-image ${location.pathname === "/" ? "h-1/4" : ""}`}
             />
           </div>
           <motion.p

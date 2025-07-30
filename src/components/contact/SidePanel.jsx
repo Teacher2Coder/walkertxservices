@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { PhoneOutgoing } from "lucide-react";
 
 const SidePanel = ({ itemVariants }) => {
   return (
@@ -14,10 +15,12 @@ const SidePanel = ({ itemVariants }) => {
         <p className="text-white font-copperplate-gothic text-xl">78681</p>
 
         <h4 className="text-lg font-semibold text-white font-copperplate-cc mt-4">
-          Call us
+          Call us!
+          <PhoneOutgoing className="w-5 h-5 text-accent-500" />
         </h4>
-        <a className="text-white font-copperplate-gothic text-xl" href="tel:5126087490">
+        <a className="text-white font-copperplate-gothic text-xl flex items-center" href="tel:5126087490">
           (512) 608-7490
+          <PhoneOutgoing className="w-5 h-5 ml-2 text-primary-500" />
         </a>
       </div>
 

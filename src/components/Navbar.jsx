@@ -64,7 +64,7 @@ const Navbar = () => {
             to="/"
             className="flex space-x-3 group"
           >
-              <GiTexas className="text-2xl md:text-3xl text-primary-600" />
+              <GiTexas className="nav-texas text-primary-600" />
               <h1 
                 className="navbar-name text-primary-600 font-bold sm:text-sm font-copperplate-cc"
               >Walker Texas Services</h1>
@@ -123,7 +123,7 @@ const Navbar = () => {
                   >
                     <Link
                       to={item.path}
-                      className={`block py-3 px-4 rounded-lg font-medium transition-all duration-300 mobile-menu-item ${
+                      className={`block py-3 px-4 rounded-lg font-medium transition-all duration-300 mobile-menu-item font-copperplate-gothic ${
                         location.pathname === item.path
                           ? "bg-primary-900/30 text-white backdrop-blur-sm"
                           : "text-white hover:text-white hover:bg-primary-900/30"

@@ -55,7 +55,7 @@ const Footer = () => {
                 <span className="text-sm mb-1 text-white text-xl font-copperplate-gothic">Call us now!</span>
                 <Link
                   className="p-1 bg-primary-600 rounded-lg transition-transform duration-300 hover:scale-105 flex items-center justify-center contact-icon"
-                  to="tel:+18175678900"
+                  to="tel:5126087490"
                   onClick={() => handleSmoothScroll()}
                   aria-label="Call us"
                 >
