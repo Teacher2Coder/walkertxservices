@@ -59,7 +59,7 @@ const Services = ({ itemVariants }) => {
                   </h3>
                 </Link>
 
-                <p className="text-white mb-4 font-copperplate-gothic">
+                <p className="text-white mb-4">
                   {service.description}
                 </p>
               </div>
@@ -70,11 +70,11 @@ const Services = ({ itemVariants }) => {
       <motion.div variants={itemVariants} className="flex justify-center mt-8">
         <Link
           to="/services"
-          className="btn-primary bg-primary-400 hover:bg-primary-700 inline-flex items-center justify-center gap-2 text-accent-500 font-copperplate-gothic"
+          className="btn-primary bg-primary-400 hover:bg-primary-700 inline-flex items-center justify-center gap-2 text-white text-xl font-copperplate-gothic"
           onClick={() => handleSmoothScroll()}
         >
           Learn more
-          <ArrowRight className="w-5 h-5 text-accent-500" />
+          <ArrowRight className="w-5 h-5 text-white" />
         </Link>
       </motion.div>
       

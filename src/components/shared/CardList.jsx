@@ -6,7 +6,7 @@ const CardList = ({ itemVariants, pageData }) => {
   return (
     <motion.div
       variants={itemVariants}
-      className="container-padding section-padding bg-neutral-900"
+      className="container-padding section-padding bg-white"
     >
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
@@ -25,21 +25,7 @@ const CardList = ({ itemVariants, pageData }) => {
           <motion.div
             variants={itemVariants}
             className="order-1 lg:order-2 space-y-6"
-          >
-            <motion.h2
-              variants={itemVariants}
-              className="text-2xl text-center sm:text-3xl lg:text-4xl font-bold text-primary-600 mb-4 font-copperplate-cc"
-            >
-              {pageData.cardTitle}
-            </motion.h2>
-            
-            <motion.p 
-              variants={itemVariants}
-              className="text-base sm:text-lg leading-relaxed text-white mb-6 font-copperplate-gothic"
-            >
-              {pageData.description}
-            </motion.p>
-            
+          > 
             <motion.ul 
               variants={itemVariants} 
               className="space-y-3"
@@ -55,7 +41,7 @@ const CardList = ({ itemVariants, pageData }) => {
                   className="flex items-start space-x-3"
                 >
                   <span className="flex-shrink-0 w-2 h-2 bg-primary-600 rounded-full mt-2"></span>
-                  <span className="text-white leading-relaxed font-copperplate-gothic">{item}</span>
+                  <span className="text-black leading-relaxed">{item}</span>
                 </motion.li>
               ))}
             </motion.ul>
@@ -63,7 +49,7 @@ const CardList = ({ itemVariants, pageData }) => {
             {pageData.callToAction && (
               <motion.p 
                 variants={itemVariants}
-                className="text-base sm:text-lg leading-relaxed text-white font-medium mt-6 font-copperplate-gothic"
+                className="text-base sm:text-lg leading-relaxed text-black font-medium mt-6"
               >
                 {pageData.callToAction}
               </motion.p>
@@ -72,7 +58,7 @@ const CardList = ({ itemVariants, pageData }) => {
             {pageData.callToAction2 && (
               <motion.p 
                 variants={itemVariants}
-                className="text-base sm:text-lg leading-relaxed text-primary-600 font-semibold font-copperplate-gothic"
+                className="text-base sm:text-lg leading-relaxed text-primary-600 font-semibold"
               >
                 {pageData.callToAction2}
               </motion.p>

@@ -13,6 +13,8 @@ const Motto = ({ itemVariants }) => {
       "Are you ready to see how we can turn your project into a reality?",
   };
 
+  // TODO: Make the image bigger
+
   return (
     <motion.div
       variants={itemVariants}

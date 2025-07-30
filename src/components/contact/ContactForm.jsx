@@ -163,7 +163,7 @@ const ContactForm = () => {
             Sending...
           </p>
         ) : (
-          <p className="flex items-center gap-2 font-copperplate-gothic">
+          <p className="flex items-center gap-2 font-copperplate-gothic text-xl">
             <Send className="w-5 h-5 font-copperplate-gothic" />
             Send Message
           </p>

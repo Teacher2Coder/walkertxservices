@@ -43,7 +43,6 @@ const Navbar = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/services", label: "Services" },
-    { path: "/equipment", label: "Our Equipment" },
     { path: "/contact", label: "Contact" },
   ];
 
@@ -77,7 +76,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative px-3 py-2 rounded-lg font-medium transition-all duration-300 font-copperplate-gothic ${
+                className={`relative px-3 py-2 text-xl font-medium transition-all duration-300 font-copperplate-gothic ${
                   location.pathname === item.path
                     ? "text-white bg-accent-900/30 backdrop-blur-sm"
                     : "text-white hover:text-white hover:bg-accent-900/30"

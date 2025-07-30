@@ -9,7 +9,6 @@ const Footer = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/services", label: "Services" },
-    { path: "/equipment", label: "Our Equipment" },
     { path: "/contact", label: "Contact Us" },
   ]
   
@@ -38,7 +37,7 @@ const Footer = () => {
                 <Link
                   key={index}
                   to={link.path}
-                  className="block text-white hover:text-white transition-colors duration-300 font-copperplate-gothic"
+                  className="block text-white text-xl hover:text-white transition-colors duration-300 font-copperplate-gothic"
                   onClick={() => handleSmoothScroll()}
                 >
                   {link.label}
@@ -53,7 +52,7 @@ const Footer = () => {
             </h4>
             <div className="contact-icons">
               <div className="flex flex-row items-center">
-                <span className="text-sm mb-1 text-white font-copperplate-gothic">Call us now!</span>
+                <span className="text-sm mb-1 text-white text-xl font-copperplate-gothic">Call us now!</span>
                 <Link
                   className="p-1 bg-primary-600 rounded-lg transition-transform duration-300 hover:scale-105 flex items-center justify-center contact-icon"
                   to="tel:+18175678900"
@@ -64,7 +63,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="flex flex-row items-center">
-                <span className="text-sm mb-1 text-white font-copperplate-gothic">Email us!</span>
+                <span className="text-sm mb-1 text-xl text-white font-copperplate-gothic">Email us!</span>
                 <Link
                   className="p-1 bg-primary-600 rounded-lg transition-transform duration-300 hover:scale-105 flex items-center justify-center contact-icon"
                   to="mailto:walkertxservices@gmail.com"
@@ -75,7 +74,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="flex flex-row items-center">
-                <span className="text-sm mb-1 text-white font-copperplate-gothic">Send us a message!</span>
+                <span className="text-sm mb-1 text-white text-xl font-copperplate-gothic">Send us a message!</span>
                 <Link
                   className="p-1 bg-primary-600 rounded-lg transition-transform duration-300 hover:scale-105 flex items-center justify-center contact-icon"
                   to="/contact"

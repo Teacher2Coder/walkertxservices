@@ -39,7 +39,7 @@ const Contact = () => {
     >
       <Hero itemVariants={itemVariants} pageData={pageData} />
 
-        <div className="bg-neutral-800 mt-20">
+        <div className="bg-neutral-800">
           <motion.div
             variants={itemVariants}
             className="container mx-auto container-padding py-12 md:py-16"

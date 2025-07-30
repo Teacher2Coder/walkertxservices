@@ -22,7 +22,7 @@ const IntroContent = ({ itemVariants, pageData }) => {
             <motion.p
               key={index}
               variants={itemVariants}
-              className="text-base sm:text-lg leading-relaxed text-gray-700 text-center font-copperplate-gothic"
+              className="text-base sm:text-lg leading-relaxed text-gray-700 text-center"
             >
               {paragraph}
             </motion.p>
