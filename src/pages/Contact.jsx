@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import Hero from '../components/shared/Hero'
 import ContactForm from '../components/contact/ContactForm'
 import SidePanel from '../components/contact/SidePanel'
-import "../../src/styles/contact.css";
 
 const Contact = () => {
   const containerVariants = {

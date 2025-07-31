@@ -16,8 +16,6 @@ const Motto = ({ itemVariants }) => {
 
   const location = useLocation();
 
-  // TODO: Make the image bigger
-
   return (
     <motion.div
       variants={itemVariants}

@@ -12,7 +12,7 @@ const Services = ({ itemVariants }) => {
       description:
         "Our 16 foot dump trailer can assist you with hauling away debris, tree branches, old fencing, and more.",
       link: "/services",
-      image: "/trailer.png",
+      image: "/trailer.webp",
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ const Services = ({ itemVariants }) => {
       description:
         "Do you have equipment, machinery or landscaping items that need to be hauled? We can help you with a variety of tasks.",
       link: "/services",
-      image: "/skid-in-truck.png",
+      image: "/skid-in-truck.webp",
     },
     {
       key: 3,
@@ -28,7 +28,7 @@ const Services = ({ itemVariants }) => {
       description:
         "Need land cleared, need open spaces, or have unwanted brush in your way? Our track loader can assist you.",
       link: "/services",
-      image: "/skidsteer-close.png",
+      image: "/skidsteer-close.webp",
     },
   ];
 

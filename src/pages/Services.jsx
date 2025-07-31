@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Hero from "../components/shared/Hero";
-import IntroContent from "../components/shared/IntroContent";
 import CardList from "../components/shared/CardList";
 
 const Services = () => {
@@ -28,7 +27,7 @@ const Services = () => {
     title: "Our Services",
     description: "Dependable Work, Honest Prices, Family Values\nDeep in the Heart of Texas",
     introTitle: "Service over everything",
-    image: "/skidsteer-shovel.jpg",
+    image: "/skidsteer-shovel.webp",
     imageAlt: "Skidsteer",
     cardTitle: "Our Services",
     items: [

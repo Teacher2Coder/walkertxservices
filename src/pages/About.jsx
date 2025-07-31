@@ -46,10 +46,6 @@ const About = () => {
 
       <div
         style={{
-          // backgroundImage: "url('/geopattern.png')",
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
-          // backgroundAttachment: "fixed",
           width: "100%",
         }}
       >

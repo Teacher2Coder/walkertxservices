@@ -13,7 +13,7 @@ const App = () => {
   const location = useLocation();
   
   return (
-    <div className='min-h-screen bg-primary-600'>
+    <div className={`${location.pathname === '/contact' ? 'bg-neutral-800' : 'bg-white'}`}>
       <Navbar />
       <main>
         <AnimatePresence mode='wait'>

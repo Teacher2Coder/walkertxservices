@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import ContactUsButton from "./ContactUsButton";
-import "../../styles/services.css";
 
 const CardList = ({ itemVariants, pageData }) => {
   
@@ -10,7 +9,7 @@ const CardList = ({ itemVariants, pageData }) => {
       className="container-padding section-padding bg-white card-list"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Image Section - Left Side */}
           <motion.div
             variants={itemVariants}
@@ -22,7 +21,6 @@ const CardList = ({ itemVariants, pageData }) => {
               className="w-full h-auto rounded-lg shadow-lg object-cover"
             />
           </motion.div>
-
           <motion.div
             variants={itemVariants}
             className="order-1 lg:order-2 space-y-6"
@@ -31,7 +29,6 @@ const CardList = ({ itemVariants, pageData }) => {
               variants={itemVariants} 
               className="space-y-3"
               style={{
-                alignItems: "center",
                 listStyleType: "none",
               }}
             >
@@ -50,7 +47,7 @@ const CardList = ({ itemVariants, pageData }) => {
             {pageData.callToAction && (
               <motion.p 
                 variants={itemVariants}
-                className="text-base sm:text-lg leading-relaxed text-black font-medium mt-6"
+                className="text-base sm:text-lg leading-relaxed text-black font-medium"
               >
                 {pageData.callToAction}
               </motion.p>
@@ -64,7 +61,11 @@ const CardList = ({ itemVariants, pageData }) => {
                 {pageData.callToAction2}
               </motion.p>
             )}
-            <ContactUsButton itemVariants={itemVariants}/>
+            
+            {/* ContactUsButton moved inside the content grid column */}
+            <div className="pt-4">
+              <ContactUsButton itemVariants={itemVariants}/>
+            </div>
           </motion.div>
         </div>
       </div>

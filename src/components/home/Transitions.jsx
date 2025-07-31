@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTransition, animated } from "@react-spring/web";
 
-const images = ["skidsteer.png", "trailer.png", "truck.png"];
+const images = ["skidsteer.webp", "trailer.webp", "truck.webp"];
 
 function Transition() {
   const [index, setIndex] = useState(0);
@@ -75,10 +75,10 @@ function Transition() {
           }}
         >
           <img
-            src="/wts-white.svg"
+            src="/wts-black.svg"
             alt="Walker TX Services Logo"
             style={{
-              width: "200px",
+              width: "75%",
               height: "auto",
               filter: "drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))",
             }}
