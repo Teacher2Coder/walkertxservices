@@ -54,6 +54,14 @@ function Transition() {
     config: { duration: 1000 },
   });
 
+  // Transition for the temporary logo
+  const logoTransitions = useTransition(!imagesLoaded, {
+    from: { opacity: 0 },
+    enter: { opacity: 0.8 },
+    leave: { opacity: 0 },
+    config: { duration: 500 },
+  });
+
   return (
     <div
       style={{
@@ -66,30 +74,32 @@ function Transition() {
       }}
     >
       {/* Centered logo while loading */}
-      {!imagesLoaded && (
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            opacity: 0.8,
-          }}
-        >
-          <img
-            src="/wts-dark.svg"
-            alt="Walker TX Services Logo"
+      {logoTransitions((style, item) =>
+        item && (
+          <animated.div
             style={{
-              width: "80%",
-              height: "80%",
-              objectFit: "contain"
+              ...style,
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
-          />
-        </div>
+          >
+            <img
+              src="/wts-dark.svg"
+              alt="Walker TX Services Logo"
+              style={{
+                width: "80%",
+                height: "80%",
+                objectFit: "contain"
+              }}
+            />
+          </animated.div>
+        )
       )}
 
       {transitions((style, item) => 
