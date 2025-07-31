@@ -30,7 +30,8 @@ const Motto = ({ itemVariants }) => {
             <img 
               src="/slogan.svg" 
               alt="Slogan" 
-              className={`slogan-image ${location.pathname === "/" ? "h-1/4" : ""}`}
+              className="slogan-image"
+              style={location.pathname === "/" ? { height: "50vh" } : {}}
             />
           </div>
           <motion.p
