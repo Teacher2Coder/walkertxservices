@@ -21,11 +21,14 @@ function Transition() {
 
       try {
         await Promise.all(imagePromises);
-        setImagesLoaded(true);
+        setTimeout(() => {
+          setImagesLoaded(true);
+        }, 2000);
       } catch (error) {
-        console.error("Error preloading images:", error);
         // Still set to true to allow component to function
-        setImagesLoaded(true);
+        setTimeout(() => {
+          setImagesLoaded(true);
+        }, 2000);
       }
     };
 
@@ -67,20 +70,23 @@ function Transition() {
         <div
           style={{
             position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            zIndex: 5,
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
             opacity: 0.8,
           }}
         >
           <img
-            src="/wts-black.svg"
+            src="/wts-dark.svg"
             alt="Walker TX Services Logo"
             style={{
-              width: "75%",
-              height: "auto",
-              filter: "drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))",
+              width: "80%",
+              height: "80%",
+              objectFit: "contain"
             }}
           />
         </div>
