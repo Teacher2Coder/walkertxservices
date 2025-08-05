@@ -23,7 +23,7 @@ function Transition() {
         await Promise.all(imagePromises);
         setTimeout(() => {
           setImagesLoaded(true);
-        }, 2000);
+        }, 2000); // 2 seconds delay to ensure images are loaded, logo will be visible
       } catch (error) {
         // Still set to true to allow component to function
         setTimeout(() => {
