@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://walker-txservices.com/sitemap.xml
+
+# Disallow crawling of any admin or private areas (none currently)
+# Disallow: /admin/ 

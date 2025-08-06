@@ -107,7 +107,8 @@ function Transition() {
           <animated.img
             key={item}
             src={`/${item}`}
-            alt=""
+            alt="Walker Texas Services construction equipment and vehicles"
+            loading="lazy"
             style={{
               ...style,
               position: "absolute",

@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
+import { Helmet } from 'react-helmet-async';
+import usePageTitle from '../utils/usePageTitle';
 import Hero from "../components/shared/Hero";
 import CardList from "../components/shared/CardList";
 
 const Services = () => {
+  
+  usePageTitle('Our Services - Walker Texas Services');
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -50,19 +55,15 @@ const Services = () => {
       animate="visible"
       className="min-h-screen flex flex-col"
     >
+      <Helmet>
+        <title>Our Services - Walker Texas Services</title>
+        <meta name="description" content="Professional construction services in Round Rock, TX: Land clearing with track loader, dump trailer services, fencing installation/repair, hauling services. Free estimates available." />
+        <meta property="og:title" content="Our Services - Walker Texas Services | Land Clearing, Fencing & Dump Trailer" />
+        <meta property="og:description" content="Professional construction services in Round Rock, TX: Land clearing with track loader, dump trailer services, fencing installation/repair, hauling services. Free estimates available." />
+        <meta property="twitter:title" content="Our Services - Walker Texas Services | Land Clearing, Fencing & Dump Trailer" />
+        <meta property="twitter:description" content="Professional construction services in Round Rock, TX: Land clearing with track loader, dump trailer services, fencing installation/repair, hauling services. Free estimates available." />
+      </Helmet>
       <Hero itemVariants={itemVariants} pageData={pageData} />
-
-      <div
-        style={{
-          backgroundImage: "url('/geopattern.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-          width: "100%",
-        }}
-      >
-      </div>
-
       <CardList itemVariants={itemVariants} pageData={pageData} />
     </motion.div>
   );

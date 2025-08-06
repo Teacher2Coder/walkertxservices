@@ -33,13 +33,13 @@ const Services = ({ itemVariants }) => {
   ];
 
   return (
-    <section className="p-6 bg-white">
+    <section className="p-6 bg-white" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto container-padding">
-        <motion.div variants={itemVariants} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-accent-500 font-copperplate-cc">
+        <motion.header variants={itemVariants} className="text-center mb-16">
+          <h2 id="services-heading" className="text-3xl md:text-4xl font-bold mb-4 text-accent-500 font-copperplate-cc">
             Services at a Glance
           </h2>
-        </motion.div>
+        </motion.header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
