@@ -1,13 +1,19 @@
 import { motion } from 'framer-motion'
-import { Helmet } from 'react-helmet-async';
-import usePageTitle from '../utils/usePageTitle';
+import { usePageSEO } from '../utils/usePageTitle';
 import Hero from '../components/shared/Hero'
 import ContactForm from '../components/contact/ContactForm'
 import SidePanel from '../components/contact/SidePanel'
 
 const Contact = () => {
   
-  usePageTitle('Contact Us - Walker Texas Services');
+  usePageSEO({
+    title: 'Contact Us - Walker Texas Services',
+    description: 'Get your free estimate today! Contact Walker Texas Services in Round Rock, TX. Call (512) 608-7490 or send us a message. Monday-Friday 8AM-5PM, Saturday by appointment.',
+    ogTitle: 'Contact Us - Walker Texas Services | Free Estimates in Round Rock, TX',
+    ogDescription: 'Get your free estimate today! Contact Walker Texas Services in Round Rock, TX. Call (512) 608-7490 or send us a message. Monday-Friday 8AM-5PM, Saturday by appointment.',
+    twitterTitle: 'Contact Us - Walker Texas Services | Free Estimates in Round Rock, TX',
+    twitterDescription: 'Get your free estimate today! Contact Walker Texas Services in Round Rock, TX. Call (512) 608-7490 or send us a message. Monday-Friday 8AM-5PM, Saturday by appointment.'
+  });
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -42,14 +48,7 @@ const Contact = () => {
       exit="hidden"
       className="min-h-screen flex flex-col"
     >
-      <Helmet>
-        <title>Contact Us - Walker Texas Services</title>
-        <meta name="description" content="Get your free construction estimate today! Contact Walker Texas Services in Round Rock, TX. Call (512) 608-7490 or send us a message. Monday-Friday 8AM-5PM, Saturday by appointment." />
-        <meta property="og:title" content="Contact Us - Walker Texas Services | Free Estimates in Round Rock, TX" />
-        <meta property="og:description" content="Get your free construction estimate today! Contact Walker Texas Services in Round Rock, TX. Call (512) 608-7490 or send us a message. Monday-Friday 8AM-5PM, Saturday by appointment." />
-        <meta property="twitter:title" content="Contact Us - Walker Texas Services | Free Estimates in Round Rock, TX" />
-        <meta property="twitter:description" content="Get your free construction estimate today! Contact Walker Texas Services in Round Rock, TX. Call (512) 608-7490 or send us a message. Monday-Friday 8AM-5PM, Saturday by appointment." />
-      </Helmet>
+
       <Hero itemVariants={itemVariants} pageData={pageData} />
 
         <div className="bg-neutral-800">

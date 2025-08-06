@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
-import { Helmet } from 'react-helmet-async';
-import usePageTitle from '../utils/usePageTitle';
+import { usePageSEO } from '../utils/usePageTitle';
 import Hero from '../components/home/Hero';
 import Services from '../components/home/Services';
 import Motto from '../components/shared/Motto';
@@ -9,7 +8,14 @@ import '../styles/home.css';
 
 const Home = () => {
   
-  usePageTitle('Walker Texas Services');
+  usePageSEO({
+    title: 'Walker Texas Services',
+    description: 'Family-owned construction company in Round Rock, Texas. Land clearing, dump trailer services, fencing, and skid steer operations. Free estimates. Serving Central Texas since 2006.',
+    ogTitle: 'Walker Texas Services',
+    ogDescription: 'Family-owned company in Round Rock, Texas. Land clearing, dump trailer services, fencing, and skid steer operations. Free estimates. Serving Central Texas since 2006.',
+    twitterTitle: 'Walker Texas Services',
+    twitterDescription: 'Family-owned company in Round Rock, Texas. Land clearing, dump trailer services, fencing, and skid steer operations. Free estimates. Serving Central Texas since 2006.'
+  });
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -34,14 +40,7 @@ const containerVariants = {
 
   return (
     <div className='min-h-screen pt-20'>
-      <Helmet>
-        <title>Walker Texas Services</title>
-        <meta name="description" content="Family-owned construction company in Round Rock, Texas. Land clearing, dump trailer services, fencing, and skid steer operations. Free estimates. Serving Central Texas since 2006." />
-        <meta property="og:title" content="Walker Texas Services - Professional Construction Services in Round Rock, TX" />
-        <meta property="og:description" content="Family-owned construction company in Round Rock, Texas. Land clearing, dump trailer services, fencing, and skid steer operations. Free estimates. Serving Central Texas since 2006." />
-        <meta property="twitter:title" content="Walker Texas Services - Professional Construction Services in Round Rock, TX" />
-        <meta property="twitter:description" content="Family-owned construction company in Round Rock, Texas. Land clearing, dump trailer services, fencing, and skid steer operations. Free estimates. Serving Central Texas since 2006." />
-      </Helmet>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"

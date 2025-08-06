@@ -1,13 +1,19 @@
 import { motion } from "framer-motion";
-import { Helmet } from 'react-helmet-async';
-import usePageTitle from '../utils/usePageTitle';
+import { usePageSEO } from '../utils/usePageTitle';
 import Hero from "../components/shared/Hero";
 import IntroContent from "../components/shared/IntroContent";
 import Motto from "../components/shared/Motto";
 
 const About = () => {
   
-  usePageTitle('About Us - Walker Texas Services');
+  usePageSEO({
+    title: 'About Us - Walker Texas Services',
+    description: 'Learn about Walker Texas Services, a family-owned business serving Central Texas for 19 years. Our background in farming, teaching, and oil & gas brings unique perspective to construction services.',
+    ogTitle: 'About Us - Walker Texas Services',
+    ogDescription: 'Learn about Walker Texas Services, a family-owned business serving Central Texas for 19 years. Our background in farming, teaching, and oil & gas brings unique perspective to construction services.',
+    twitterTitle: 'About Us - Walker Texas Services',
+    twitterDescription: 'Learn about Walker Texas Services, a family-owned business serving Central Texas for 19 years. Our background in farming, teaching, and oil & gas brings unique perspective to construction services.'
+  });
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -47,14 +53,7 @@ const About = () => {
       animate="visible"
       className="min-h-screen flex flex-col"
     >
-      <Helmet>
-        <title>About Us - Walker Texas Services</title>
-        <meta name="description" content="Learn about Walker Texas Services, a family-owned construction business serving Central Texas for 19 years. Our background in farming, teaching, and oil & gas brings unique perspective to construction services." />
-        <meta property="og:title" content="About Us - Walker Texas Services | Family-Owned Construction Company" />
-        <meta property="og:description" content="Learn about Walker Texas Services, a family-owned construction business serving Central Texas for 19 years. Our background in farming, teaching, and oil & gas brings unique perspective to construction services." />
-        <meta property="twitter:title" content="About Us - Walker Texas Services | Family-Owned Construction Company" />
-        <meta property="twitter:description" content="Learn about Walker Texas Services, a family-owned construction business serving Central Texas for 19 years. Our background in farming, teaching, and oil & gas brings unique perspective to construction services." />
-      </Helmet>
+
       <Hero itemVariants={itemVariants} pageData={pageData} />
 
       <div
