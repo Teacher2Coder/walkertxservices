@@ -46,7 +46,7 @@ const Services = ({ itemVariants }) => {
             <motion.div
               key={service.key}
               whileHover={{ y: -10 }}
-              className="bg-gray-50 dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg card-hover outline-black outline-6"
+              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg card-hover outline-black outline-6"
             >
               <div className="h-48 relative">
                 <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
@@ -54,7 +54,7 @@ const Services = ({ itemVariants }) => {
 
               <div className="p-6">
                 <Link to={service.link}>
-                  <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-300 cursor-pointer font-copperplate-cc">
+                  <h3 className="text-xl font-semibold mb-2 text-primary-600 hover:text-primary-400 transition-colors duration-300 cursor-pointer font-copperplate-cc">
                     {service.title}
                   </h3>
                 </Link>
